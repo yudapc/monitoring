@@ -1,7 +1,7 @@
 <?php
 /**
- * example :
- * php run.php http://yourwebsite.com yudapc@gmail.com
+ * example run on crontab cpanel :
+ * /usr/bin/php -q /home/fhunila/public_html/exts/run.php http://www.pacificseatranslines.co.id yudapc@gmail.com >/dev/null
 */
 
   include 'mail.php';

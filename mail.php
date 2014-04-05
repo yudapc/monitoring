@@ -8,13 +8,12 @@ class Mail {
     $subject = 'Monitoring Website';
     $from = "boxguecom@gmail.com";
     $headers = "From: " . strip_tags($from) . "\r\n";
-    $headers .= "Reply-To: ". strip_tags($from) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
     $message = '<html><body>';
     $message .= "<h2>Status Website [$status]</h2>";
-    $message .= "Your Website $status <br /> <b> $time_now </b> <br /> <a href='$url'>$url</a>";
-    $message .= "<br /><br /><br />";
+    $message .= "Your Website $status <br /> <br /> <b> $time_now </b> <br /> <br /> <a href='$url'>$url</a>";
+    $message .= "<br /><br /><br /> Automatic Check Your Website id.boxgue.com";
     $message .= '</body></html>';
     mail($email,$subject,$message,$headers);
   }
