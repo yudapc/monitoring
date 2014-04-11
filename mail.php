@@ -13,7 +13,7 @@ class Mail {
     $message = '<html><body>';
     $message .= "<h2>Status Website [$status]</h2>";
     $message .= "Your Website $status <br /> <br /> <b> $time_now </b> <br /> <br /> <a href='$url'>$url</a>";
-    $message .= "<br /><br /><br /> Automatic Check Your Website id.boxgue.com";
+    $message .= "<br /><br /><br /> Automatic Monitoring Powered By <a href='id.boxgue.com'>id.boxgue.com</a>";
     $message .= '</body></html>';
     mail($email,$subject,$message,$headers);
   }
